@@ -1,0 +1,16 @@
+// 1) 커스텀 변수 오버라이드(초기 단계)
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$theme-colors: map-merge($theme-colors, ( "teal-100": $teal-100,
+ "teal-200": $teal-200,
+ "teal-300": $teal-300,
+ "teal-400": $teal-400,
+ "teal-500": $teal-500,
+ "teal-600": $teal-600,
+ "teal-700": $teal-700,
+ "teal-800": $teal-800,
+ "teal-900": $teal-900));
+
+// 2) 나머지 전체 구성
+@import "../node_modules/bootstrap/scss/bootstrap";
